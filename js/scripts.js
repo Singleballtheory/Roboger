@@ -14,3 +14,12 @@ function beepBoop(input) {
   return output
 }
 
+$(document).ready(function() {
+  $("form#form").submit(function(event) {
+    event.preventDefault();
+    const input = parseInt($("input#userInput").val());
+    let result = beepBoop(input);
+
+    $("#result").text(result.join(" "));
+  });
+});
