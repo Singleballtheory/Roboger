@@ -34,6 +34,8 @@ Test: "It should replace 3 with "Won't you be my neighbor?".
 Code: beepBoop(3);
 Expected Output: 0, 1, 2, Won't you be my neighbor?
 
+PASS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 Describe: beepBoop()
 Test: "It should replace 2 with "Boop!".
 Code: beepBoop(3);
@@ -60,14 +62,3 @@ Code: beepBoop(13)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
 
 
-function beepBoop(input) {
-  const neighbor = "Won't you be my neighbor";
-  let output = [];
-  for (i = 0; i <= input; i++){
-    if (input === 3) {
-      return output.replace(3, neighbor);
-    }
-    output.push(i);
-  }
-  return output
-}
