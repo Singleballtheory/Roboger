@@ -7,6 +7,8 @@ function beepBoop(input) {
       output.push("Boop!");
     } else if (i === 1) {
       output.push("Beep!");
+    } else if (i.toString().includes(3)) {
+      output.push("Won't you be my neighbor?");
     } else {
     output.push(i);
     }

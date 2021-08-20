@@ -43,12 +43,13 @@ Test: "It should replace 1 with "Beep!"
 Code: beepBoop(3);
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?
 ```
-All above tests pass now!
-
+```
 Describe: beepBoop()
 Test: "It should replace any number that has a 3 at any index point with "Won't you be my neighbor?"
 Code: beepBoop(13)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, 10, 11, 12, Won't you be my neighbor?
+```
+All above specs pass!
 
 Describe: beepBoop()
 Test: "It should replace any number that has a 2 at any index point with "Boop!" except for numbers that contain a 3."
