@@ -58,3 +58,16 @@ Describe: beepBoop()
 Test: "It should replace any number that has a 1 at any index point with "Beep!" except for numbers that contain a 3 or a 2."
 Code: beepBoop(13)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
+
+
+function beepBoop(input) {
+  const neighbor = "Won't you be my neighbor";
+  let output = [];
+  for (i = 0; i <= input; i++){
+    if (input === 3) {
+      return output.replace(3, neighbor);
+    }
+    output.push(i);
+  }
+  return output
+}
