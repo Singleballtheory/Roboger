@@ -1,7 +1,11 @@
 function beepBoop(input) {
-  let output = []
+  const neighbor = "Won't you be my neighbor";
+  let output = [];
   for (i = 0; i <= input; i++){
-    output.push(i)
+    if (input === 3) {
+      return output.replace(3, neighbor);
+    }
+    output.push(i);
   }
   return output
 }
