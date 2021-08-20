@@ -1,9 +1,38 @@
-Outline and rules:
-Keep the user input and html simple!
+# _Welcome to the Neighborhood!_
 
-UI:
-Create an input field that only accepts numeric input or that ignores any non-numeric input
-Create an output field that can (potentially) hold extremely large strings to be returned to it
+#### _A Mr. Roboger Project_
+
+#### By _**Scott Hutley**_
+
+## Technologies Used
+
+* _html_
+* _javascript/jquery_
+* _css/bootstrap_
+* _TDD_
+
+## Description
+
+_A very simple input/output program. "Welcome" takes a numeric input from the user and for-loops through each number beginning at zero and ending with, well, the number that was put in. If it spots a 1, 2, or 3 at any point in any number, it will replace that particular number with custom text using the following conditions: Any 2 trumps a 1, and any 3 trumps both a 2 AND/OR a 1. Make sense? Well it shouldn't, but that's what this program does. When the for-loop is complete, it will display the ENTIRE list back to the user -- with all the custom text replacements of course!_
+
+## Setup/Installation Requirements
+
+* Clone this repository to an empty folder or to your desktop. Instructions for cloning can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
+* Navigate to the index.html file within the folder and open with your web browser.
+
+## Known Bugs/Issues
+
+* Currently there is no limit to the size of number that can be input. For the sake of both computing and output length, a number cap will be implemented in the future.
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+_Copyright (c) 2021 Scott Hutley_
+
+## Contact Information
+
+_Scott Hutley <scotthutley1@comcast.net>_
 
 ALL SPECS PASS
 
