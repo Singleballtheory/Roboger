@@ -3,6 +3,10 @@ function beepBoop(input) {
   for (i = 0; i <= input; i++){
     if (i === 3) {
       output.push("Won't you be my neighbor?");
+    } else if (i === 2) {
+      output.push("Boop!");
+    } else if (i === 1) {
+      output.push("Beep!");
     } else {
     output.push(i);
     }
