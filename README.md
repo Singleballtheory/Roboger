@@ -5,15 +5,9 @@ UI:
 Create an input field that only accepts numeric input or that ignores any non-numeric input
 Create an output field that can (potentially) hold extremely large strings to be returned to it
 
-When dealing with multi-digit numbers:
-3 anywhere in the number will override a 1 or a 2 and replace the whole number (ex, 13 = "Won't you be ny neighbor?")
-2 anywhere will override a 1 and replace the whole number (ex, 21 = "Boop")
-1 anywhere will replace the whole number (ex, 15 = "Beep")
-
+ALL SPECS PASS
 
 Specs:
-
-starting example given --
 ```
 Describe: beepBoop()
 Test: "It should return an array with a 0 if the number 0 is inputted"
@@ -49,16 +43,16 @@ Test: "It should replace any number that has a 3 at any index point with "Won't 
 Code: beepBoop(13)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, 10, 11, 12, Won't you be my neighbor?
 ```
-All above specs pass!
-
+```
 Describe: beepBoop()
 Test: "It should replace any number that has a 2 at any index point with "Boop!" except for numbers that contain a 3."
 Code: beepBoop(23)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, 10, 11, Boop!, Won't you be my neighbor?, 14, 15, 16, 17, 18, 19, Boop!, Boop!, Boop!, Won't you be my neighbor?
-
+```
+```
 Describe: beepBoop()
 Test: "It should replace any number that has a 1 at any index point with "Beep!" except for numbers that contain a 3 or a 2."
 Code: beepBoop(13)
 Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?
-
+```
 
